@@ -38,6 +38,7 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background:linear-gradient(20deg,rgb(29, 173, 70),rgb(30, 143, 184));
 }
 .container h2{
     text-align: center;
