@@ -30,6 +30,9 @@ a{
     text-decoration: none;
     font-size: 0.9rem;
 }
+.info{
+    font-size: 0.6rem;
+}
 .container{
     height: 93vh;
     padding: 0 1rem;
