@@ -11,9 +11,7 @@ btn.addEventListener("click", function(){
         rgb1 = getRandomRgb1();
         rgb2 = getRandomRgb2();
         ang = angle();
-        console.log(rgb1);
-        console.log(rgb2);
-        console.log(ang);
+        console.log("linear-gradient(" + ang + "deg, " + rgb1 + ", " + rgb2 + ")");
 
     }
     var gradient = "linear-gradient(" + ang + "deg, " + rgb1 + ", " + rgb2 + ")";
