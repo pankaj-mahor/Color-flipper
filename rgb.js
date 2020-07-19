@@ -1,7 +1,9 @@
 const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
-
+const container =  document.querySelector('h2');
+const icon = document.querySelector('.icon');
   
+icon.title = "Get Your Color Code";
 
 btn.addEventListener("click", function(){
     let rgb ="";
@@ -19,3 +21,6 @@ function getRandomRgb() {
     var b = num & 255;
     return 'rgb(' + r + ', ' + g + ', ' + b + ')';
 }
+icon.addEventListener('click', function(){
+    container.classList.toggle('show');
+})

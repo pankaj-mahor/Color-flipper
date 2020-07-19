@@ -30,9 +30,6 @@ a{
     text-decoration: none;
     font-size: 0.9rem;
 }
-.info{
-    font-size: 0.6rem;
-}
 .container{
     height: 93vh;
     padding: 0 1rem;
@@ -49,6 +46,9 @@ a{
     color: white;
     padding: 2rem 1.5rem;
     border-radius: 10px;
+}
+.info{
+    font-size: 0.6rem;
 }
 
 .btn-hero{
@@ -67,4 +67,41 @@ a{
     background-color: black;
     color: white;
     transition: 0.3s linear;
+}
+footer{
+    color: black;
+    text-align: center;
+    font-size: 0.8rem;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icon{
+    position: absolute;
+    top: 80%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   box-shadow: 3px 3pa 3px #777;
+}
+i{
+    color: black;
+}
+.show{
+    display: block;
+}
+h2{
+    display: none;
+}
+button{
+    position: fixed;
+    top: 70%;
 }

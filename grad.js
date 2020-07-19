@@ -1,7 +1,9 @@
 const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
 
-  
+const container =  document.querySelector('h2');
+const icon = document.querySelector('.icon');
+icon.title = "Get Your Color Code";
 
 btn.addEventListener("click", function(){
     let rgb1 ="";
@@ -11,12 +13,10 @@ btn.addEventListener("click", function(){
         rgb1 = getRandomRgb1();
         rgb2 = getRandomRgb2();
         ang = angle();
-        console.log("linear-gradient(" + ang + "deg, " + rgb1 + ", " + rgb2 + ")");
-
     }
     var gradient = "linear-gradient(" + ang + "deg, " + rgb1 + ", " + rgb2 + ")";
-color.textContent = ("linear ,"+ ang + "," +rgb1+ "," +rgb2+"");
-document.body.style.background = gradient; 
+    color.textContent = ("linear-gradient(" + ang + "deg, " + rgb1 + ", " + rgb2 + ");");
+    document.body.style.background = gradient; 
 });
 
 function getRandomRgb1() {
@@ -37,3 +37,7 @@ function angle(){
     var ang = Math.floor(Math.random()*90);
     return ang;
 }
+
+icon.addEventListener('click', function(){
+    container.classList.toggle('show');
+})
